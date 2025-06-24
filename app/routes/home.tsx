@@ -1,13 +1,22 @@
+import { Hero } from "../home/hero";
+import { Header } from "../home/header";
+import { Features } from "../home/features";
+import { FAQS } from "../home/faqs";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { Footer } from "../home/footer";
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: "vendoor | Manage your biz with ease" }];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <div className="border-b border-gray-200">
+      <Header />
+      <Hero />
+      <Features />
+      <FAQS />
+      <Footer />
+    </div>
+  );
 }
