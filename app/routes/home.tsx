@@ -1,9 +1,9 @@
-import { Hero } from "../home/hero";
-import { Header } from "../home/header";
-import { Features } from "../home/features";
-import { FAQS } from "../home/faqs";
+import { Hero } from "~/home/hero";
+import { Header } from "~/components/header";
+import { Features } from "~/home/features";
+import { FAQS } from "~/home/faqs";
 import type { Route } from "./+types/home";
-import { Footer } from "../home/footer";
+import { Footer } from "~/components/footer";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "vendoor | Manage your biz with ease" }];

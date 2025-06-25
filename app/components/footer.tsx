@@ -11,7 +11,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-slate-50 mt-16">
       <div className="container mx-auto px-6 py-12 lg:px-8">
         <div className="mb-12">
           <div className="flex items-center gap-x-2">
