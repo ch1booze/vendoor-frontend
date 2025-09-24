@@ -3,8 +3,8 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 export function Header() {
   return (
-    <header className="container mx-auto max-w-6xl">
-      <nav className="flex items-center justify-between py-4">
+    <header className="container mx-auto max-w-6xl relative">
+      <nav className="flex items-center justify-between p-4">
         <div className="flex items-center gap-x-2">
           <img src="/logo.png" alt="vendoor" className="h-4 w-auto" />
           <NavLink to="/" className="text-xl font-bold text-gray-900" end>
@@ -12,7 +12,7 @@ export function Header() {
           </NavLink>
         </div>
 
-        <ul className="flex items-center gap-x-10">
+        <ul className="hidden md:flex items-center gap-x-10 p-6">
           <li>
             <a
               href="#features"
