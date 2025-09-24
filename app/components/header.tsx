@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { LuArrowRight, LuArrowUpRight } from "react-icons/lu";
+import { LuArrowUpRight } from "react-icons/lu";
 
 export function Header() {
   return (
@@ -52,15 +52,29 @@ export function Header() {
           </li>
         </ul>
 
-        <div>
-          <NavLink
-            to="/signup"
-            className="flex items-center gap-x-2 text-sm font-medium px-4 py-2 border border-gray-300 rounded-full hover:bg-gray-100 transition-colors"
-          >
-            <span>SIGN UP</span>
-            <LuArrowRight />
-          </NavLink>
-        </div>
+        <ul className="flex justify-right">
+          <li>
+            <div>
+              <NavLink
+                to="/login"
+                className="flex items-center gap-x-2 text-sm font-medium px-4 py-2 hover:bg-gray-100 hover:rounded-full transition-colors"
+              >
+                <span className="underline">LOGIN</span>
+              </NavLink>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <NavLink
+                to="/signup"
+                className="flex items-center gap-x-2 text-sm font-medium px-4 py-2 border border-gray-300 rounded-full bg-green-100 hover:bg-gray-100 hover:rounded-full transition-colors"
+              >
+                <span>SIGNUP</span>
+              </NavLink>
+            </div>
+          </li>
+        </ul>
       </nav>
     </header>
   );
