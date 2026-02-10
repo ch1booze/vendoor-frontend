@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "vendoor-frontend",
+      "name": "bizz-frontend",
       "dependencies": {
         "@angular/common": "^21.0.0",
         "@angular/compiler": "^21.0.0",

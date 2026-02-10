@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "vendoor-frontend": {
+    "bizz-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "vendoor-frontend:build:production"
+              "buildTarget": "bizz-frontend:build:production"
             },
             "development": {
-              "buildTarget": "vendoor-frontend:build:development"
+              "buildTarget": "bizz-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
