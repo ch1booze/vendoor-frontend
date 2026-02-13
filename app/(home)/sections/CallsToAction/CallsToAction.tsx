@@ -1,3 +1,3 @@
 export default function CallsToAction() {
-    return <>CallsToAction</>;
+  return <>CallsToAction</>;
 }
